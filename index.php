@@ -27,9 +27,11 @@
                 <div class="row">
                     <div class="col-4" v-for="(disc, index) in list" :key="disc + index">
                         <div class="disc card">
-                            <img class="img-card-top" alt="">
-                            <div class="card-body">
-                            <h3>{{disc.title}}</h3>
+                            <img class="img-card-top py-4 px-5" :src="disc.poster" alt="">
+                            <div class="card-body text-white text-center">
+                                <h3>{{disc.title}}</h3>
+                                <p>{{disc.author}}</p>
+                                <h5>{{disc.year}}</h5>
                             </div>
                         </div>
                     </div>
