@@ -23,9 +23,9 @@
         </header>
 
         <main>
-            <div class="container">
+            <div class="container pt-5">
                 <div class="row">
-                    <div class="col-4" v-for="(disc, index) in list" :key="disc + index">
+                    <div class="col-4 g-5" v-for="(disc, index) in list" :key="disc + index">
                         <div class="disc card">
                             <img class="img-card-top py-4 px-5" :src="disc.poster" alt="">
                             <div class="card-body text-white text-center">
