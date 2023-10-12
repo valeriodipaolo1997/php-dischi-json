@@ -25,10 +25,12 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4" v-for="(disc, index) in list" :key="disc + index">
                         <div class="disc card">
-                            <img class="img-card-top" src="" alt="">
-                            <div class="card-body"></div>
+                            <img class="img-card-top" alt="">
+                            <div class="card-body">
+                            <h3>{{disc.title}}</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
